@@ -1,0 +1,33 @@
+body {
+  font-family: "Lucida Grande", "Droid Sans", Arial, Helvetica, sans-serif;
+}
+@media print {
+  footer {
+    page-break-after: always;
+  }
+  .columns2 {
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+  }
+}
+.columns2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+p {
+  -webkit-column-break-inside: avoid; /* Chrome, Safari */
+  page-break-inside: avoid;           /* Theoretically FF 20+ */
+  break-inside: avoid-column;         /* IE 11 */
+  display:table;                      /* Actually FF 20+ */
+}
+
+.cloud {
+
+}
+
+h1 {
+  align: 'center';
+}
